@@ -1,0 +1,25 @@
+server:
+  port: 1200
+  servlet:
+    context-path: "/banking"
+
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost"
+    username: "root"
+    password: "tiger"
+
+  sql:
+    init:
+      mode: ALWAYS
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true # for formating sql queries (without show-sql it won't work )
+
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true # for showing sql queries
+
